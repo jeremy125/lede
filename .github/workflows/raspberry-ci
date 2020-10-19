@@ -10,11 +10,10 @@
 name: raspberry-CI
 
 on:
-  push:
-    branches: 
-      - master
   schedule:
-    - cron: 30 19 * * *
+    - cron: 0 20 * * *
+  release:
+    types: [published]
 
 jobs:
 
